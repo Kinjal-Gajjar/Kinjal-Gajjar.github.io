@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Kinjal Gajjar — Résumé</title>
+<style>
+  @page { size: A4; margin: 12mm 12mm; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  :root{
+    --ink:#25323f;      /* headings / bold */
+    --body:#2f3a44;     /* body text */
+    --muted:#6b7680;    /* dates, descriptions */
+    --accent:#35617f;   /* subtitle, section titles, links */
+    --rule:#cfd6dc;
+  }
+  html{ -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+  body{
+    font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+    color:var(--body); font-size:10.3pt; line-height:1.42;
+  }
+  /* header */
+  .name{ font-size:22pt; font-weight:700; letter-spacing:.4px; color:var(--ink); text-transform:uppercase; }
+  .role{ font-size:10.8pt; color:var(--accent); font-weight:500; margin-top:3px; }
+  .contact{ display:flex; flex-wrap:wrap; gap:5px 20px; margin-top:9px; font-size:9.3pt; color:var(--muted); }
+  .contact span{ display:inline-flex; align-items:center; gap:5px; white-space:nowrap; }
+  .contact svg{ width:11px; height:11px; flex:none; color:var(--accent); }
+
+  /* section */
+  section{ margin-top:15px; }
+  h2{ font-size:10.4pt; font-weight:700; letter-spacing:.6px; text-transform:uppercase;
+      color:var(--accent); border-bottom:1px solid var(--rule); padding-bottom:3px; margin-bottom:8px;
+      break-after:avoid; }
+  section.keep{ break-inside:avoid; }
+  .skill{ break-inside:avoid; }
+
+  p.summary{ font-size:10.2pt; line-height:1.5; }
+
+  .entry{ margin-bottom:11px; break-inside:avoid; }
+  .entry:last-child{ margin-bottom:0; }
+  .row{ display:flex; justify-content:space-between; align-items:baseline; gap:16px; }
+  .row .t{ font-size:11pt; color:var(--ink); }
+  .row .t b{ font-weight:700; }
+  .row .t i{ font-style:italic; font-weight:400; color:#4a5560; }
+  .row .d{ font-size:9.4pt; color:var(--muted); white-space:nowrap; text-align:right; }
+  .loc{ font-size:9.4pt; color:var(--muted); text-align:right; }
+  .desc{ font-style:italic; color:var(--muted); font-size:9.6pt; margin:3px 0 4px; }
+
+  ul{ list-style:none; margin-top:3px; }
+  li{ position:relative; padding-left:13px; margin:2.5px 0; font-size:10.2pt; line-height:1.4; }
+  li::before{ content:""; position:absolute; left:2px; top:6.5px; width:3.5px; height:3.5px;
+              border-radius:50%; background:var(--accent); }
+  li b{ font-weight:700; color:var(--ink); }
+
+  /* skills grid */
+  .skills{ display:grid; grid-template-columns:1fr 1fr; gap:9px 34px; }
+  .skill .cat{ font-weight:700; color:var(--ink); font-size:9.7pt; margin-bottom:1px; }
+  .skill .val{ font-size:9.9pt; color:var(--body); }
+  .edu-row .t b{ font-weight:700; }
+</style>
+</head>
+<body>
+
+  <header>
+    <div class="name">Kinjal Gajjar</div>
+    <div class="role">Full Stack Mobile &amp; Web Developer &nbsp;|&nbsp; Flutter · React Native · React/Next.js · FastAPI</div>
+    <div class="contact">
+      <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 5h18v14H3zM3 6l9 6 9-6"/></svg>kinjalgajjar1942@gmail.com</span>
+      <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.6A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.7a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.4-1.1a2 2 0 0 1 2.1-.5c.9.3 1.8.5 2.7.6a2 2 0 0 1 1.7 2z"/></svg>+91 93285 16941</span>
+      <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>Ahmedabad, Gujarat, India</span>
+      <span><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5A11.5 11.5 0 0 0 8.4 22.9c.6.1.8-.25.8-.56v-2c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.3-1.7-1.3-1.7-1.1-.72.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.75.4-1.3.7-1.6-2.55-.3-5.2-1.3-5.2-5.7 0-1.25.45-2.3 1.2-3.1-.12-.3-.5-1.5.1-3.1 0 0 1-.32 3.3 1.2a11.5 11.5 0 0 1 6 0c2.3-1.52 3.3-1.2 3.3-1.2.6 1.6.2 2.8.1 3.1.75.8 1.2 1.85 1.2 3.1 0 4.4-2.65 5.4-5.2 5.7.4.36.8 1.05.8 2.1v3.1c0 .31.2.67.8.56A11.5 11.5 0 0 0 12 .5z"/></svg>github.com/Kinjal-Gajjar</span>
+      <span><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.94 8.56a1.69 1.69 0 1 0 0-3.37 1.69 1.69 0 0 0 0 3.37zM8.34 18.5V10.13H5.55V18.5H8.34zM18.5 18.5V13.2A3.26 3.26 0 0 0 15.24 9.94c-.85 0-1.84.52-2.32 1.3V10.13H10.2V18.5H12.99V13.57a1.4 1.4 0 0 1 2.79 0V18.5H18.5z"/></svg>linkedin.com/in/kinjal-gajjar-ba5a561b6</span>
+    </div>
+  </header>
+
+  <section>
+    <h2>Summary</h2>
+    <p class="summary">Performance-driven Full Stack Developer with 3+ years of experience building and shipping scalable cross-platform mobile and web applications using Flutter, React Native, and React.js / Next.js. Skilled in designing responsive UI/UX, integrating RESTful APIs, and implementing efficient state-management solutions. Experienced in backend development with FastAPI and Spring Boot and database design across PostgreSQL, MySQL, and MS SQL. Strong problem-solving ability with hands-on experience in CI/CD setup, OTA updates, authentication systems, and end-to-end production release to the Google Play Store and Apple App Store. Passionate about building high-performance, user-centric products.</p>
+  </section>
+
+  <section>
+    <h2>Education</h2>
+    <div class="entry edu-row">
+      <div class="row"><div class="t"><b>Bachelor's in Information Technology,</b> <i>Gujarat Technological University</i></div><div class="d">07/2019 – 07/2023</div></div>
+      <div class="row"><div class="t" style="font-size:10pt;">CGPA: 8.96 / 10.0</div><div class="loc">Ahmedabad, India</div></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Experience</h2>
+
+    <div class="entry">
+      <div class="row"><div class="t"><b>Junior Developer,</b> <i>ByPeople Technologies</i></div><div class="d">02/2023 – Present</div></div>
+      <div class="loc">Ahmedabad, India</div>
+      <div class="desc">A software development company building cross-platform mobile and web solutions for global clients.</div>
+      <ul>
+        <li><b>Contribute to full-stack mobile and web application development</b> across Flutter, React Native, and React / Next.js.</li>
+        <li>Implement UI components and screens following best practices and reusable design patterns.</li>
+        <li>Work on API integration and state management using Redux, Provider, and the Context API.</li>
+        <li>Debug and optimize application performance and lead production releases to the app stores.</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="row"><div class="t"><b>Trainee Developer,</b> <i>Mystudia Education</i></div><div class="d">07/2022 – 08/2022</div></div>
+      <div class="loc">Ahmedabad, India</div>
+      <div class="desc">An education and visa consultancy helping students pursue international education opportunities.</div>
+      <ul>
+        <li><b>Developed the Mystudia mobile app using Flutter,</b> enabling students to explore courses, apply for admissions, and track visa processes.</li>
+        <li>Built a cross-platform (iOS &amp; Android) solution with Flutter, improving engagement for the consultancy's services.</li>
+        <li>Integrated REST APIs for real-time updates on admissions and visa status, enhancing transparency for students.</li>
+        <li>Designed an intuitive UI/UX to simplify student onboarding and course selection.</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="row"><div class="t"><b>Intern,</b> <i>INFOLABZ IT Services Pvt. Ltd.</i></div><div class="d">06/2022 – 07/2022</div></div>
+      <div class="loc">Ahmedabad, India</div>
+      <div class="desc">A technology services company specializing in mobile and web app development.</div>
+      <ul>
+        <li>Gained hands-on experience in Flutter app development.</li>
+        <li>Developed and customized UI components for mobile applications.</li>
+        <li>Assisted in API integration and state management.</li>
+        <li>Performed application debugging and issue resolution.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="keep">
+    <h2>Technical Skills</h2>
+    <div class="skills">
+      <div class="skill"><div class="cat">Frontend &amp; Mobile Development</div><div class="val">Flutter, Dart, React Native, React.js, Next.js, JavaScript, TypeScript, Tailwind CSS</div></div>
+      <div class="skill"><div class="cat">Backend Development</div><div class="val">FastAPI, Python, Spring Boot (basic), RESTful API Development, Spring Data JPA, Hibernate</div></div>
+      <div class="skill"><div class="cat">State Management</div><div class="val">Provider, Riverpod, GetX, Bloc, Redux, Context API</div></div>
+      <div class="skill"><div class="cat">Databases</div><div class="val">PostgreSQL, MySQL, MS SQL</div></div>
+      <div class="skill"><div class="cat">App Deployment &amp; Publishing</div><div class="val">Google Play Store (Play Console), Apple App Store (App Store Connect / TestFlight), OTA release management</div></div>
+      <div class="skill"><div class="cat">Cloud &amp; Authentication</div><div class="val">AWS Amplify, Firebase, JWT Authentication</div></div>
+      <div class="skill"><div class="cat">DevOps &amp; CI/CD</div><div class="val">CodeMagic, CodePush, Docker, Git, GitHub</div></div>
+      <div class="skill"><div class="cat">Tools &amp; Technologies</div><div class="val">VS Code, Android Studio, Xcode, Jira, Postman, JasperReports</div></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Projects</h2>
+
+    <div class="entry">
+      <div class="row"><div class="t"><b>AP Invoice Automation — CeliaAssist,</b> <i>(Next.js + React + FastAPI)</i></div><div class="d">01/2026 – Present</div></div>
+      <ul>
+        <li><b>Built a full-stack, multi-tenant Accounts Payable invoice-automation platform</b> that ingests invoices and processes them through an AI (LangGraph) agent workflow with a human-in-the-loop review checkpoint.</li>
+        <li>Developed the responsive web UI using <b>Next.js 14, React, and TypeScript</b> with Tailwind CSS — invoice dashboards, 2/3-way matching, approval queues, and Recharts analytics.</li>
+        <li>Implemented and integrated <b>FastAPI REST APIs</b> for invoice ingestion, matching, approval, and payment workflows.</li>
+        <li>Added <b>real-time status updates over WebSockets</b> and secure authentication (JWT + TOTP 2FA) with role-based access control (RBAC).</li>
+        <li>Worked with <b>PostgreSQL, Redis, and Celery</b> async processing in a Dockerized microservices setup; integrated ERP systems (SAP S/4HANA) over the Model Context Protocol (MCP).</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="row"><div class="t"><b>Ideel,</b> <i>(Flutter — Web, Android, iOS)</i></div><div class="d">11/2025 – 01/2026</div></div>
+      <ul>
+        <li><b>Led cross-platform upgrade and maintenance</b> of Web, Android, and iOS applications using a unified Flutter codebase.</li>
+        <li><b>Resolved major version-migration issues,</b> ensuring stable production deployments across platforms.</li>
+        <li><b>Configured and automated CI/CD pipelines using CodeMagic,</b> reducing manual build and release effort.</li>
+        <li><b>Implemented CodePush (OTA updates)</b> to enable instant feature rollouts without full app-store releases.</li>
+        <li><b>Developed a secure pre-login authentication system using AWS Amplify,</b> including session and token lifecycle management.</li>
+        <li><b>Designed and optimized onboarding workflows,</b> improving user activation and retention rates.</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="row"><div class="t"><b>Nandi Food Inventory,</b> <i>(React.js + Redux)</i></div><div class="d">06/2025 – 11/2025</div></div>
+      <ul>
+        <li><b>Developed a scalable warehouse-management web application</b> for real-time inventory operations.</li>
+        <li>Built <b>GRN, GTN, Supplier, and Customer modules,</b> streamlining end-to-end stock workflows.</li>
+        <li>Implemented <b>Redux-based state management</b> for efficient real-time stock tracking.</li>
+        <li>Designed <b>responsive dashboards and dynamic data tables,</b> ensuring seamless cross-device usability.</li>
+        <li>Integrated RESTful APIs for synchronized inventory and transaction data.</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="row"><div class="t"><b>Kurudy,</b> <i>(React Native)</i></div><div class="d">04/2025 – 05/2025</div></div>
+      <ul>
+        <li><b>Built a cross-platform tourism-booking mobile application</b> for Android and iOS.</li>
+        <li>Developed <b>customer and vendor dashboards,</b> supporting listings, bookings, and management features.</li>
+        <li>Integrated <b>secure payment gateways,</b> enabling smooth digital transactions.</li>
+        <li>Designed an intuitive UI/UX to enhance user engagement and booking conversion.</li>
+        <li>Managed real-time booking updates using optimized API and state-management logic.</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="row"><div class="t"><b>SwiftlyIT — ERP System,</b> <i>(Spring Boot)</i></div><div class="d">01/2025 – 03/2025</div></div>
+      <ul>
+        <li>Contributed as a <b>Backend Developer</b> on a Spring Boot-based ERP system.</li>
+        <li>Developed and optimized <b>CRUD modules</b> for enterprise operations.</li>
+        <li>Designed and implemented <b>RESTful APIs</b> for seamless frontend-backend communication.</li>
+        <li>Improved database performance using <b>Spring Data JPA, Hibernate, MySQL, and MS SQL.</b></li>
+        <li>Enhanced system architecture for better scalability and maintainability.</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="row"><div class="t"><b>Vehya — Service Pro &amp; Customer Apps,</b> <i>(Flutter + Native Integration)</i></div><div class="d">04/2023 – 12/2024</div></div>
+      <ul>
+        <li><b>Developed and maintained responsive UI for a multi-portal system</b> (Contractors, Electricians, Apprentices) alongside the customer booking and service-request app.</li>
+        <li>Implemented <b>role-based access control (RBAC)</b> for workflow and job management.</li>
+        <li>Integrated <b>native Android (Kotlin) &amp; iOS (Swift) modules</b> for calendar-event synchronization and <b>Google Maps</b> for location-based services.</li>
+        <li>Implemented <b>real-time updates using WebSockets and Firebase</b> for live job and booking status.</li>
+        <li>Integrated third-party services including <b>Onfido (KYC verification),</b> secure payments, authentication, and notifications.</li>
+        <li>Optimized app performance and ensured seamless API integration across devices.</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="row"><div class="t"><b>CrewLair,</b> <i>Social Platform (Flutter)</i></div><div class="d">04/2023 – 06/2023</div></div>
+      <ul>
+        <li>Designed responsive UI across mobile, tablet, and web platforms using Flutter.</li>
+        <li>Developed onboarding and profile-management modules.</li>
+        <li>Implemented <b>interest-based matching logic</b> for user connections.</li>
+        <li>Integrated <b>Agora for real-time video-calling functionality.</b></li>
+        <li>Collaborated on REST API integration and performance optimization.</li>
+      </ul>
+    </div>
+  </section>
+
+</body>
+</html>
